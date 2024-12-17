@@ -1,0 +1,62 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Phase1 Suite" parallel="tests" thread-count="3">
+
+<!--    <test name="TestOnFireFox">-->
+<!--        <parameter name="browser" value="Firefox"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="testcases.AutomationTestStore">-->
+<!--                <methods>-->
+<!--                    <include name="test1"></include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="TestOnChrome">-->
+<!--        <parameter name="browser" value="Firefox"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="testcases.AutomationTestStore">-->
+<!--                <methods>-->
+<!--                    <include name="test2"></include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+	<test name="TestOnChromeAndFirefox">
+	<parameter name="browser" value="Firefox,Chrome"></parameter>
+        <classes>
+            <class name="testcases.AutomationTestStore">
+                    <methods>
+                        <include name="test3"></include>
+                    </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+
+<!--    <test name="Login And Logout">-->
+<!--            <classes>-->
+<!--                <class name="testcases.LoginTests">-->
+<!--                        <methods>-->
+<!--                            <include name="loginIntoApplication"></include>-->
+<!--                            <include name="Scrolling"></include>-->
+<!--                            <include name="ListBoxDemo"></include>-->
+<!--                        </methods>-->
+<!--                </class>-->
+<!--                <class name="testcases.TrainingSession">-->
+<!--                    <methods>-->
+<!--                        <include name="AlertWindow"></include>-->
+<!--                        <include name="Slider"></include>-->
+<!--                        <include name="JavaScriptAlert"></include>-->
+<!--                        <include name="InputForm"></include>-->
+<!--                    </methods>-->
+<!--                </class>-->
+<!--            </classes>-->
+<!--    </test>-->
+</suite>
